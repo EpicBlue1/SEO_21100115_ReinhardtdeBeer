@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="css/style.css">
-    <script src="js/index.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <title>Home Page</title>
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css">
+	<link href="style.css">
+	<title>Home Page</title>
 </head>
+
 <body>
-    <nav class="p-6 bg-white shadow">
-        <div>
-            <span class="text 2xl bold">Home</span>
+	<!-- Navbar responsive Tailwind -->
+	<nav class="bg-gray-100">
+		<!-- main controller -->
+		<div class=" space-x-4 px-6 py-2">
+			<div class="flex justify-between items-center">
+				<div class="flex space-x-10 items-center">
+					<!-- logo -->
+					<div class="flex space-x-3 items-center"> <img src="img/logo-tennis-11550717762ct1y5pjxul-gigapixel-scale-2x-removebg-preview.png" class="w-8"> <span class="font-extrabold">TennisYo</span> </div>
+					
+                    <!-- primary -->
+					<div class="hidden md:flex"> <a class="px-10 hover:font-bold">Data</a> <a class="px-10 hover:font-bold">Data</a> </div>
+				</div>
+
+				<!-- secondary -->
+				<div class="hidden md:flex"> <a class="text-gray-700 hover:font-bold">Links</a> </div>
+
+                <!-- mobile button -->
+                <div class="md:hidden flex items-center ">
+                    <button class="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                        </svg>
+                    </button>
+                </div>
+			</div>
+		</div>
+		<!-- mobile -->
+        <div class="mobile-menu hidden">
+            <a class="block md:hidden p-3 border-2">YEET</a>
+            <a class="block md:hidden p-3">YEET</a>
+            <a class="block md:hidden p-3 border-2">YEET</a>
         </div>
-    </nav>
+	</nav>
 
-    <div>
-    <h1>HELLO</h1>
-    <h2>ajcnajc</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam illo inventore similique assumenda autem eligendi quia, repellendus nostrum quaerat consectetur quis beatae, aspernatur repudiandae sed corrupti libero molestiae, rem illum.</p>  
+	<div class="bg-green-700 h-64 flex justify-center items-center">
+		<h2 class="text-4xl">YEET</h2>
     </div>
+	<div class="bg-yellow-500 p-10 md:flex lg:flex md:space-x-8">
+		<div class="flex-grow bg-white p-2">Hello</div>
+		<div class="flex-grow bg-white p-2">Hello</div>
+		<div class="flex-grow bg-white p-2">Hello</div>
+	</div>
+	<div class="bg-teal-700 h-64">
+		<div class="flex justify-center items-center h-full items-stretch">
+			<div class="w-1/5 bg-orange-500 p-10 justify-center items-center">sidebar</div>
+			<div class="flex-grow bg-teal-500 p-10 justify-center items-center">Content</div>
+		</div>
+	</div>
 
+    <script src="js/index.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
