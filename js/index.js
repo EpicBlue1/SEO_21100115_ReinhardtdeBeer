@@ -30,3 +30,14 @@ btn.addEventListener("click", () => {
 //         console.log("Local Time");
 //         console.log(result);
 //     });
+
+//Card Compare page
+//add and remove cards
+//grab everything
+// const add = document.querySelector('button.mobile-menu-button');
+// const menu = document.querySelector('.mobile-menu');
+
+// //add event listings
+// btn.addEventListener("click", () => {
+//     menu.classList.toggle("hidden");
+// });
