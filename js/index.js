@@ -1,4 +1,4 @@
-console.log("Workiing");
+console.log("Working");
 
 //grab everything
 const btn = document.querySelector('button.mobile-menu-button');
@@ -31,13 +31,25 @@ btn.addEventListener("click", () => {
 //         console.log(result);
 //     });
 
-//Card Compare page
-//add and remove cards
-//grab everything
-// const add = document.querySelector('button.mobile-menu-button');
-// const menu = document.querySelector('.mobile-menu');
+// Card Compare page
+// add and remove cards
+// grab everything
+const clickDiv = document.querySelector('div.Selector');
+const changeInfo = document.querySelector('.Option');
+const changeInfoTwo = document.querySelector('.DisplayOption');
+const removeButton = document.querySelector('.DisplayOption');
+const search = document.querySelector('.Search');
 
-// //add event listings
-// btn.addEventListener("click", () => {
-//     menu.classList.toggle("hidden");
-// });
+
+//add event listings
+clickDiv.addEventListener("click", () => {
+    changeInfo.classList.toggle("hidden");
+    changeInfoTwo.classList.toggle("hidden");
+    search.classList.toggle("hidden");
+});
+
+removeButton.addEventListener("click", () => {
+    changeInfo.classList.toggle("hidden");
+    changeInfoTwo.classList.toggle("hidden");
+    search.classList.toggle("hidden");
+});

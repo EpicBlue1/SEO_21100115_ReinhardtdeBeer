@@ -45,22 +45,38 @@
 	<!-- <div id="Model" class="w-full">
 		<model-viewer class="w-full" environment-image="img\hilly_terrain_01_2k.png" exposure="0.5" src="assests/untitled.gltf" alt="Logo Model" rotation-per-second="10deg" interaction-prompt="assests/untitled.gltf" auto-rotate ar ios-src="assests/untitled.gltf"></model-viewer>
 	</div> -->
-    <div class="text-center p-2 md:text-8xl text-6xl text-white">
+    <div class="text-center p-2 py-6 md:text-8xl text-6xl text-white">
         <h1>Compare!</h1>
     </div>
-    <div class="bg-gray-900 w-full h-full md:flex p-6 md:space-x-2">
 
-        <div class="bg-gray-700 flex-1 h-96 rounded my-2">
-            <input class="rounded align-middle">                
-        </div>
+    <div class="bg-gray-900 w-full h-full md:flex p-3 md:space-x-2 grid md:grid-cols-3 gap-5">
 
-        <div class="bg-gray-700 flex-1 rounded my-2">
-            <button class="card-add-button p-5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-            </button>           
-        </div>
+		<!-- two divs -->
+		<div class="text-white p-2 grid justify-items-center h-full md:w-3/6 bg-orange-400 rounded">
+			<h3 class="text-center HeadingCrypto p-2">Select Option</h3>
+			<div class="h-6 text-black w-full flex Search">
+				<input class="w-4/5 rounded-l-md">
+				<div class="w-1/5 h-full bg-gray-800 rounded-r-md"></div>
+			</div>
+			
+			<div class="w-full h-64 bg-white m-2 rounded p-2">
+				<div class="w-full h-16 bg-gray-800 rounded Option Selector"></div>
+				<div class="w-full h-full bg-pink-800 rounded DisplayOption hidden">
+					<div class="grid p-2">
+						<button>
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-white">
+			<input>
+			Hello
+		</div>
 
     </div>
 
