@@ -13,7 +13,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-	<title>Home Page</title>
+	<title>Compare Page</title>
 </head>
 
 <body class="bg-gray-900">
@@ -26,7 +26,7 @@
 					<!-- logo -->
 					<div class="flex space-x-3 items-center"> <img src="../img/e2e722f3aeb96f9494f0b484e04027cd.jpg" class="w-8"> <a href="../index.html" class="font-semibold font-sans text-lg">CryptoYo</a> </div>
 					<!-- primary -->
-					<div class="hidden md:flex"> <a href="pages/cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a class="px-10 hover:font-bold">Review</a> </div>
+					<div class="hidden md:flex"> <a href="cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a class="px-10 hover:font-bold">Review</a> </div>
 				</div>
 				<!-- secondary -->
 				<div class="hidden md:flex"> <a class="text-gray-700 hover:font-bold text-base">Links</a> </div>
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<!-- mobile -->
-		<div class="mobile-menu hidden"> <a class="block md:hidden p-3 border-2">Card Compare</a> <a class="block md:hidden p-3">Review</a> </div>
+		<div class="mobile-menu hidden"> <a href="../index.html" class="block md:hidden p-3 border-2">Home</a> <a class="block md:hidden p-3">Review</a> </div>
 	</nav>
 	<!-- <div id="Model" class="w-full">
 		<model-viewer class="w-full" environment-image="img\hilly_terrain_01_2k.png" exposure="0.5" src="assests/untitled.gltf" alt="Logo Model" rotation-per-second="10deg" interaction-prompt="assests/untitled.gltf" auto-rotate ar ios-src="assests/untitled.gltf"></model-viewer>
@@ -54,13 +54,26 @@
 		<!-- two divs -->
 		<div class="text-white p-2 grid justify-items-center h-full md:w-3/6 bg-orange-400 rounded">
 			<h3 class="text-center HeadingCrypto p-2">Select Option</h3>
-			<div class="h-6 text-black w-full flex Search">
+			<div class="h-6 text-black w-full flex">
 				<input class="w-4/5 rounded-l-md">
-				<div class="w-1/5 h-full bg-gray-800 rounded-r-md"></div>
+				<button class="w-1/5 h-full bg-gray-800 rounded-r-md Search">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto" fill="none" viewBox="0 0 24 24" stroke="white">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+					</svg>
+				</button>
 			</div>
 			
-			<div class="w-full h-64 bg-white m-2 rounded p-2">
-				<div class="w-full h-16 bg-gray-800 rounded Option Selector"></div>
+			<div class="w-full h-96 bg-white m-2 rounded p-2 overflow-auto SearchRes">
+				<Button class="w-full h-16 p-1 bg-gray-800 rounded Option Selector grid grid-cols-3 text-left mb-2">
+					<img src="" class="h-14 w-14 rounded-full bg-white">
+						<div>`+result.coins[i].name+`</div>
+					<div>
+						<div>Market Cap Rank</div>
+						<div>`+result.coins[i].market_cap_rank+`</div>
+					</div>
+				</Button>
+			</div>
+
 				<div class="w-full h-full bg-pink-800 rounded DisplayOption hidden">
 					<div class="grid p-2">
 						<button>
