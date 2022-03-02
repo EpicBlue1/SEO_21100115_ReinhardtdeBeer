@@ -24,6 +24,7 @@ const coinTrending = "https://api.coingecko.com/api/v3/search/trending";
             //add html to dom
             $(".TopCurrencies").append(TopCur);
 
+            //round number to display on the side
             function roundPrice(price) {
                 return price.toFixed(12);
             }
@@ -31,8 +32,8 @@ const coinTrending = "https://api.coingecko.com/api/v3/search/trending";
         };
     });
 
-
-    //grab everything
+//mobile menu functionality
+//grab everything
 const btn = document.querySelector('button.mobile-menu-button');
 const menu = document.querySelector('.mobile-menu');
 

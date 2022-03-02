@@ -20,14 +20,16 @@ btn.addEventListener("click", () => {
 const search = document.querySelector('.SearchOne');
 
 search.addEventListener("click", () => {
-	//$(".SearchRes").empty();
+    //get value from input
 	const searchQuery = document.querySelector('input').value;
 
 	// search result
+    //insert value from input into url
 	const coinSearch = "https://api.coingecko.com/api/v3/search?query=" + searchQuery;
 
 	$.getJSON(coinSearch, function(result) {
 
+//loop through results and add to html
 		for (var i = 0; i < result.coins.length; i++) {
 
 			//variable for html
@@ -45,16 +47,19 @@ search.addEventListener("click", () => {
             $(".SearchRes").append(searchRes);
 
 
+            //open result   
 			$("Button").click(function(){
 			    $(".Selector").addClass("hidden");
                 $(".DisplayOption").removeClass("hidden");
             })
 
+            //close result
             $(".close").click(function(){
 			    $(".Selector").removeClass("hidden");
                 $(".DisplayOption").addClass("hidden");
             })
 
+            //clear results when new search
             $(".SearchOne").click(function(){
 			    $(".SearchRes").empty();
             })
