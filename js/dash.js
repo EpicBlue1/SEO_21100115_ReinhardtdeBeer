@@ -8,6 +8,8 @@ const coinTrending = "https://api.coingecko.com/api/v3/search/trending";
 
         for(var i = 0; i < result.coins.length; i++){
 
+            
+
             //variable for html
             var TopCur = `
             <div class="p-2 h-full bg-gray-900 py-2 px-2 grid md:grid-cols-2 grid-cols-4 text-xs justify-items-center border-2 border-y-white">
@@ -16,14 +18,19 @@ const coinTrending = "https://api.coingecko.com/api/v3/search/trending";
 					<div class="py-2 text-white">Market Cap:</div>
 					<div class="py-2 text-white">`+result.coins[i].item.market_cap_rank+`</div>
 					<div class="py-2 text-white">Bitcoin Price</div>
-					<div class="py-2 text-white">`+result.coins[i].item.price_btc+`</div>
+					<div class="py-2 text-white">`+ roundPrice(result.coins[i].item.price_btc) + `</div>
 			</div>
             `;
             //add html to dom
             $(".TopCurrencies").append(TopCur);
+
+            function roundPrice(price) {
+                return price.toFixed(12);
+            }
         
         };
     });
+
 
     //grab everything
 const btn = document.querySelector('button.mobile-menu-button');
