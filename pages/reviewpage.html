@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css">
+	<link href="style.css">
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Compare Page</title>
+</head>
+
+<body class="bg-gray-900">
+	<!-- Navbar responsive Tailwind -->
+	<nav class="bg-white">
+		<!-- main controller -->
+		<div class=" space-x-4 px-6 py-2">
+			<div class="flex justify-between items-center">
+				<div class="flex space-x-10 items-center">
+					<!-- logo -->
+					<div class="flex space-x-3 items-center"> <img src="../img/2073916-removebg-preview-removebg-preview.png" class="w-8"> <a href="../index.html" class="font-semibold font-sans text-lg">CryptoYo</a> </div>
+					<!-- primary -->
+					<div class="hidden md:flex"> <a href="cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a href="reviewpage.html" class="px-10 hover:font-bold">Review</a> </div>
+				</div>
+				<!-- secondary -->
+				<div class="hidden md:flex bg-orange-400 rounded px-2"> <a class="text-gray-700 hover:font-bold text-base">Links</a> </div>
+				<!-- mobile button -->
+				<div class="md:hidden flex items-center">
+					<button class="mobile-menu-button">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" /> </svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile -->
+		<div class="mobile-menu hidden"> <a href="../index.html" class="block md:hidden p-3 border-2">Home</a> <a class="block md:hidden p-3">Review</a> </div>
+	</nav>
+
+    <div class="p-6">
+        <div class="h-full w-3/6 bg-white rounded mx-auto p-2">
+            <h2 class="text-2xl text-center p-2">Leave us a review</h2>
+            <form action="post" class="grid w-4/6 grid-cols-1 mx-auto">
+                <label for="First">Name</label>
+                <input type="text" class="border-2 border-black rounded px-2">
+                <label for="First">Comment</label>
+                <textarea class="border-2 border-black rounded p-2" name="textArea" id="textArea" cols="30" rows="10"></textarea>
+                <input class="border-2 border-black rounded bg-orange-500 my-4" type="submit" value="Submit">              
+            </form>
+        </div>
+    </div>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../js/index.js"></script>
+</body>
+
+</html>
