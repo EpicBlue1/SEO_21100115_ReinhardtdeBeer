@@ -23,7 +23,7 @@
 					<!-- logo -->
 					<div class="flex space-x-3 items-center"> <img src="../img/2073916-removebg-preview-removebg-preview.png" class="w-8"> <a href="../index.html" class="font-semibold font-sans text-lg">CryptoYo</a> </div>
 					<!-- primary -->
-					<div class="hidden md:flex"> <a href="cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a href="reviewpage.html" class="px-10 hover:font-bold">Review</a> </div>
+					<div class="hidden md:flex"> <a href="cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a href="reviewpage.html" class="px-10 hover:font-bold">Feedback</a> </div>
 				</div>
 				<!-- secondary -->
 				<div class="hidden md:flex bg-orange-400 rounded px-2"> <a class="text-gray-700 hover:font-bold text-base">Links</a> </div>
@@ -37,29 +37,31 @@
 			</div>
 		</div>
 		<!-- mobile -->
-		<div class="mobile-menu hidden"> <a href="../index.html" class="block md:hidden p-3 border-2">Home</a> <a class="block md:hidden p-3">Review</a> </div>
+		<div class="mobile-menu hidden"> <a href="../index.html" class="block md:hidden p-3 border-2">Home</a> <a class="block md:hidden p-3">Feedback</a> </div>
 	</nav>
 	<!-- <div id="Model" class="w-full">
 		<model-viewer class="w-full" environment-image="img\hilly_terrain_01_2k.png" exposure="0.5" src="assests/untitled.gltf" alt="Logo Model" rotation-per-second="10deg" interaction-prompt="assests/untitled.gltf" auto-rotate ar ios-src="assests/untitled.gltf"></model-viewer>
 	</div> -->
+
 	<div class="text-center p-2 py-6 md:text-8xl text-6xl text-white">
 		<h1>Compare!</h1>
 	</div>
 
-	<div class="bg-gray-900 w-full h-full md:flex p-3 md:space-x-2 grid md:grid-cols-3 gap-5">
-		<!-- two divs and compare data-->
-		<div class="text-white p-2 grid justify-items-center h-full md:w-2/6 bg-orange-400 rounded">
+	<div class="bg-gray-900 w-full h-full ">
+	<!-- two divs and compare data-->
+	<div class="md:flex md:p-3 md:space-x-2 grid md:grid-cols-3 gap-5 justify-center">
+
+		<!-- First compare div -->
+		<div class="text-white p-2 grid justify-items-center h-full w-72 md:w-2/6 bg-orange-400 rounded">
 			<h3 class="text-center HeadingCrypto p-2">Select Option</h3>
-			<div class="h-6 text-black w-full flex">
-				<input class="w-4/5 rounded-l-md Search px-1">
-				<button class="w-1/5 h-full bg-gray-800 rounded-r-md Search SearchOne">
+			<div class="h-6 text-black w-full flex Search">
+				<input class="w-4/5 rounded-l-md">
+				<button class="w-1/5 h-full bg-gray-800 rounded-r-md SearchOne">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto" fill="none" viewBox="0 0 24 24" stroke="white">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
 				</button>
 			</div>
 			<div class="w-full h-96 bg-white m-2 rounded p-2 overflow-auto SearchRes">
-				
-			</div>
 				<div class="w-full h-full bg-pink-800 rounded DisplayOption hidden">
 					<div class="grid p-2">
 						<button class="close">
@@ -68,18 +70,24 @@
 						</button>
 					</div>
 				</div>
-		</div>
+			</div>
+				
+		</div> 
+		<!-- end of first -->
+		
 		<!-- middle compare data -->
-		<div class="text-white p-2 grid justify-items-center h-full md:w-2/6 bg-orange-400 rounded">
+		<div class="text-white w-72 md:w-1/6 p-2 grid justify-items-center h-full bg-orange-400 rounded">
 			<div class="w-full h-full"><h3 class="text-center HeadingCrypto p-2">Data</h3>
 				<div class="h-6 text-black w-full flex">
 					<div class="w-4/5 rounded-l-md"></div>
 				</div>
-				<div class="w-full h-96 m-2 rounded p-2 overflow-auto SearchRes"></div>
+				<div class="w-full md:h-96 m-2 rounded p-2 overflow-auto SearchResTwo"></div>
 			</div>
 		</div>
+		<!-- end of middle -->
 
-		<div class="text-white p-2 grid justify-items-center h-full md:w-2/6 bg-orange-400 rounded">
+		<!-- second compare div -->
+		<div class="text-white p-2 grid justify-items-center h-full w-72 md:w-2/6 bg-orange-400 rounded">
 			<h3 class="text-center HeadingCrypto p-2">Select Option</h3>
 			<div class="h-6 text-black w-full flex">
 				<input class="w-4/5 rounded-l-md Search">
@@ -100,6 +108,9 @@
 					</div>
 				</div>
 		</div>
+		<!-- end of second compare -->
+	</div>
+
 	</div>
 
 <!-- decription of functionality -->
