@@ -47,31 +47,29 @@ search.addEventListener("click", () => {
             `;
 			//add html to dom
             $(".SearchRes").append(searchRes);
-
-
-            //open result   
-			$(".Option").click(function(){
-			    $(".Selector").addClass("hidden");
-                $(this).closest(".DisplayOption").toggle("hidden");
-                $(".Search").addClass("hidden");
-                console.log("CLicked on a result")
-            })
-
-            //close result
-            $(".close").click(function(){
-			    $(".Selector").removeClass("hidden");
-                $(this).closest(".DisplayOption").toggle("hidden");
-                $(".Search").removeClass("hidden");
-                console.log("Closed result")
-            })
-
-            //clear results when new search
-            $(".SearchOne").click(function(){
-			    $(".SearchRes").empty();
-                $(".DisplayOption").empty();
-            });
-
 		};
+
+        //open result   
+$(".Option").click(function(){
+    $(".Selector").addClass("hidden");
+    $(this).closest(".DisplayOption").toggle("hidden");
+    $(".Search").addClass("hidden");
+    console.log("CLicked on a result")
+})
+
+//close result
+$(".close").click(function(){
+    $(".Selector").removeClass("hidden");
+    $(this).closest(".DisplayOption").toggle("hidden");
+    $(".Search").removeClass("hidden");
+    console.log("Closed result")
+})
+
+
+ //clear results when new search
+$(".SearchOne").click(function(){
+    $(".SearchRes").empty();
+});
 	});
 });
 
