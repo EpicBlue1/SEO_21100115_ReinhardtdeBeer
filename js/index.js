@@ -7,128 +7,52 @@ btn.addEventListener("click", () => {
 	menu.classList.toggle("hidden");
 });
 
-//all coins
-// const coins = "https://api.coingecko.com/api/v3/coins";
-//     $.getJSON(coins, function(result){
-//         console.log("Coins");
-//         console.log(result);
-//     });
-
-//first search block
-
-// Card Compare page
-// add and remove cards
-// grab everything
-const search = document.querySelector('.SearchOne');
-
-search.addEventListener("click", () => {
-    //get value from input
-	const searchQuery = document.querySelector('input').value;
-
-	// search result
-    //insert value from input into url
-	const coinSearch = "https://api.coingecko.com/api/v3/search?query=" + searchQuery;
-
-	$.getJSON(coinSearch, function(result) {
-
-//loop through results and add to html
-		for (var i = 0; i < result.coins.length; i++) {
-
-			//variable for html
-			var searchRes = `
-            <Button class="w-full h-16 p-1 bg-gray-800 rounded Option Selector grid grid-cols-3 text-left mb-2">
-                <img src="` + result.coins[i].large + `" class="h-14 w-14 rounded-full bg-white">
-                    <div>` + result.coins[i].name + `</div>
-                <div>
-                    <div>Market Cap Rank</div>
-                    <div>` + result.coins[i].market_cap_rank + `</div>
-                </div>
-            </Button>
-            `;
-			//add html to dom
-            $(".SearchRes").append(searchRes);
-		};
-
-        //open result   
-$(".Option").click(function(){
-    $(".Selector").addClass("hidden");
-    $(this).closest(".DisplayOption").toggle("hidden");
-    $(".Search").addClass("hidden");
-    console.log("CLicked on a result")
-})
-
-//close result
-$(".close").click(function(){
-    $(".Selector").removeClass("hidden");
-    $(this).closest(".DisplayOption").toggle("hidden");
-    $(".Search").removeClass("hidden");
-    console.log("Closed result")
-})
 
 
- //clear results when new search
-$(".SearchOne").click(function(){
-    $(".SearchRes").empty();
-});
-	});
-});
+// //generate random words
+const words = "https://random-word-api.herokuapp.com/word?number=5";
+    $.getJSON(words, function(result){
+        console.log("Word");
+        console.log(result);
 
-//first search block
+        for(var i = 0; i < result.length; i++){
 
-// Card Compare page
-// add and remove cards
-// grab everything
-// const searchtwo = document.querySelector('.SearchOne');
+            var str = result[i];
+            var strFirstThree = str.substring(0,3);
+            console.log(strFirstThree)
 
-// searchtwo.addEventListener("click", () => {
-//     //get value from input
-// 	const searchQuery = document.querySelector('input').value;
+            const search = "https://api.coingecko.com/api/v3/search?query="+ strFirstThree +"";
+            $.getJSON(search, function(result){
 
-// 	// search result
-//     //insert value from input into url
-// 	const coinSearch = "https://api.coingecko.com/api/v3/search?query=" + searchQuery;
+                var len = result.coins.length;
+                console.log(result.coins);
 
-// 	$.getJSON(coinSearch, function(result) {
+                if(len >= 1){
 
-// //loop through results and add to html
-// 		for (var i = 0; i < result.coins.length; i++) {
+                    var random = Math.floor(Math.random() * len);
+                    console.log(random);
+                    
+                    //variable for html
+                    var Card = `
+                    <div class="bg-cover w-32 h-48 md:w-64 md:h-96 pt-6 md:pt-12"  style="background-image: url('../img/Card\ Front.png')">
+                    <div class="bg-cover bg-white w-10 h-10 md:w-24 md:h-24 rounded-full mx-auto" style="background-image: url('`+ result.coins[random].large + `')"></div>
+                    <h2 class="w-24 md:w-40 text-center truncate mx-auto md:text-2xl py-4">`+ result.coins[random].name + `</h2>
+                    <p class="text-center text-white font-bold text-xs md:text-lg">Price: `+ result.coins[random].market_cap_rank + `</p>
+                    <p class="text-center text-white font-bold text-xs md:text-lg">MarketCap: `+ result.coins[random].market_cap_rank + `</p>
+                    </div>
+                    `;
+                //add html to dom
+                $(".cards").append(Card);
 
-// 			//variable for html
-// 			var searchRes = `
-//             <Button class="w-full h-16 p-1 bg-gray-800 rounded Option Selector grid grid-cols-3 text-left mb-2">
-//                 <img src="` + result.coins[i].large + `" class="h-14 w-14 rounded-full bg-white">
-//                     <div>` + result.coins[i].name + `</div>
-//                 <div>
-//                     <div>Market Cap Rank</div>
-//                     <div>` + result.coins[i].market_cap_rank + `</div>
-//                 </div>
-//             </Button>
-//             `;
-// 			//add html to dom
-//             $(".SearchRes").append(searchRes);
+                } else {
 
 
-//             //open result   
-// 			$(".Option").click(function(){
-// 			    $(".Selector").addClass("hidden");
-//                 $(".DisplayOption").removeClass("hidden");
-//                 $(".Search").addClass("hidden");
-//                 console.log("CLicked on a result")
-//             })
 
-//             //close result
-//             $(".close").click(function(){
-// 			    $(".Selector").removeClass("hidden");
-//                 $(".DisplayOption").addClass("hidden");
-//                 $(".Search").removeClass("hidden");
-//                 console.log("Closed result")
-//             })
+                }
 
-//             //clear results when new search
-//             $(".SearchOne").click(function(){
-// 			    $(".SearchRes").empty();
-//             })
+                
+            });    
 
-// 		};
-// 	});
-// });
+        }
+    });
+

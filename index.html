@@ -21,7 +21,7 @@
 			<div class="flex justify-between items-center">
 				<div class="flex space-x-10 items-center">
 					<!-- logo -->
-					<div class="flex space-x-3 items-center"> <img src="img/2073916-removebg-preview-removebg-preview.png" class="w-8"> <a href="index.html" class="font-semibold font-sans text-lg">CryptoYo</a> </div>
+					<div class="flex space-x-3 items-center"> <img src="img/2073916-removebg-preview-removebg-preview.png" class="w-8"> <a href="index.html" class="font-semibold font-sans text-lg">CryptoNight</a> </div>
 					<!-- primary -->
 					<div class="hidden md:flex"> <a href="pages/cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a href="pages/reviewpage.html" class="px-10 hover:font-bold">Feedback</a> </div>
 				</div>
@@ -39,21 +39,22 @@
 		<!-- mobile menu-->
 		<div class="mobile-menu hidden"> <a href="pages/cardCompare.html" class="block md:hidden p-3 border-2">Compare</a> <a class="block md:hidden p-3">Feedback</a> </div>
 	</nav>
-	<!-- <div id="Model" class="w-full">
-		<model-viewer class="w-full" environment-image="img\hilly_terrain_01_2k.png" exposure="0.5" src="assests/untitled.gltf" alt="Logo Model" rotation-per-second="10deg" interaction-prompt="assests/untitled.gltf" auto-rotate ar ios-src="assests/untitled.gltf"></model-viewer>
-	</div> -->
 
 	<!-- Main Wecloming and information -->
 	<div class="md:flex">
-		<div class="md:w-4/5 w-full">
+		<div class="md:w-4/5 w-full grid grid-cols-2">
 			<div>
 				<div class="p-8 bg-gray-900 md:h-64 h-32">
 					<div class="md:text-8xl text-6xl text-white font-sans text-center align-middle">
 						<h1>WELCOME</h1></div>
 				</div>
 			</div>
+
+			<div id="Model" class="w-full sm:col-span-1 col-span-2">
+				<model-viewer class="w-full h-96" environment-image="img\hilly_terrain_01_2k.png" src="assests/earthandclouds.gltf" alt="Logo Model" rotation-per-second="10deg" interaction-prompt="assests/untitled.gltf" auto-rotate ar ios-src="assests/untitled.gltf"></model-viewer>
+			</div>
 			
-			<div>
+			<div class="col-span-2">
 				<div class="p-8 bg-gray-900 md:h-64 h-76">
 					<div class="text-base text-white font-sans text-left align-middle">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
