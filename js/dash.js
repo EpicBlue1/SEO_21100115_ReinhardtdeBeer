@@ -17,8 +17,8 @@ const coinTrending = "https://api.coingecko.com/api/v3/search/trending";
                     <img src="`+result.coins[i].item.small+`" class="w-7 h-7 bg-white rounded-full"></img>
 					<div class="py-2 text-white">Market Cap:</div>
 					<div class="py-2 text-white">`+result.coins[i].item.market_cap_rank+`</div>
-					<div class="py-2 text-white">Bitcoin Price</div>
-					<div class="py-2 text-white">`+ roundPrice(result.coins[i].item.price_btc) + `</div>
+					<div class="py-2 text-right text-white">Bitcoin Price</div>
+					<div class="py-2 text-left text-white">`+ roundPrice(result.coins[i].item.price_btc) + `</div>
 			</div>
             `;
             //add html to dom
