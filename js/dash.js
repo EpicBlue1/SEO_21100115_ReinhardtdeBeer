@@ -41,3 +41,13 @@ const menu = document.querySelector('.mobile-menu');
 btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
 });
+
+//links
+//grab everything
+const btnOn = document.querySelector('.linkbutton');
+const menuOn = document.querySelector('.links');
+
+//add event listings
+btnOn.addEventListener("click", () => {
+    menuOn.classList.toggle("hidden");
+});
