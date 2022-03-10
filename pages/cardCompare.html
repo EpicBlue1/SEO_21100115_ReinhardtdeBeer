@@ -23,7 +23,7 @@
 					<!-- logo -->
 					<div class="flex space-x-3 items-center"> <img src="../img/2073916-removebg-preview-removebg-preview.png" class="w-8"> <a href="../index.html" class="font-semibold font-sans text-lg">CryptoNight</a> </div>
 					<!-- primary -->
-					<div class="hidden md:flex"> <a href="cardCompare.html" class="px-10 hover:font-bold text-base">Card Compare</a> <a href="reviewpage.html" class="px-10 hover:font-bold">Feedback</a> </div>
+					<div class="hidden md:flex"> <a href="cardCompare.html" class="px-10 hover:font-bold text-base">Card Game</a> <a href="reviewpage.html" class="px-10 hover:font-bold">Feedback</a> </div>
 				</div>
 				<!-- secondary -->
 				<div class="hidden md:flex bg-orange-400 rounded px-2"> <a class="text-gray-700 hover:font-bold text-base">Links</a> </div>
@@ -37,35 +37,47 @@
 			</div>
 		</div>
 		<!-- mobile -->
-		<div class="mobile-menu hidden"> <a href="../index.html" class="block md:hidden p-3 border-2">Home</a> <a class="block md:hidden p-3">Feedback</a> </div>
+		<div class="mobile-menu hidden"> <a href="../index.html" class="block md:hidden p-3 border-2">Home</a> <a href="reviewpage.html" class="block md:hidden p-3">Feedback</a> </div>
 	</nav>
+
+	<div class="fixed my-40 w-full h-96 mx-auto wonPop hidden">
+		<div class="mx-auto w-4/5 h-full bg-gray-800 rounded-lg">
+			<div class="grid grid-cols-1">
+				<h1 class="text-center text-white text-4xl p-6">CONGRATS</h1>
+				<p class="text-center text-white text-2xl p-4">You won a gif of a graphics card</p>
+				<div class="bg-contain h-32 md:h-40" style="background-position: center; background-image: url('../img//ezgif-1-51562bd60d.gif'); background-repeat: no-repeat"></div>
+				<a class="text-center w-full bg-orange-400 text-white text-2xl p-4" href="../pages/reviewpage.html">Give Feedback?</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="absolute w-full h-full mx-auto bg-white lostPop hidden">
+		<div class="grid bg-contain grid-cols-1 w-full bg-gray-800" style="background-position: center; background-repeat: repeat; background-image: url('../img/LostScreen.png">
+			<div class="h-96"></div>
+			<div class="h-96"></div>
+			<div class="h-96"></div>
+		</div>
+	</div>
 
 
 	<div class="bg-cover w-full h-sceen"  style="background-image: url('../img/Table.png')">
 	<!-- top and bottom div -->
 	<!-- top -->
-		<div class="grid grid-cols-5 overflow-auto">
-			<div class="md:px-6">
-				<img src="../img/Card Back oponent.png">
-			</div>
-			<div class="md:px-6">
-				<img src="../img/Card Back oponent.png">
-			</div>
-			<div class="md:px-6">
-				<img src="../img/Card Back oponent.png">
-			</div>
-			<div class="md:px-6">
-				<img src="../img/Card Back oponent.png">
-			</div>
-			<div class="md:px-6">
-				<img src="../img/Card Back oponent.png">
-			</div>
+		<div  class="w-full h-32">
+			<div class="bg-cover mx-auto w-full h-40 md:h-80" style="background-position: bottom; background-repeat: no-repeat; background-image: url('../img/ezgif-1-2d8281df43.gif')"></div>
 		</div>
 
-		<div class="grid grid-cols-1">
-			<div class="h-32 text-center text-white p-8 justify-self-center ">
-				<div class="w-64 h-16 p-5 rounded bg-orange-400">All in</div>
-			</div>
+		<div class="h-64 grid grid-cols-1 mt-20">
+
+		<div class="h-64 text-center text-white p-8 justify-self-center">
+				<div class="w-64 h-16 p-5 rounded bg-orange-400 Generate mx-auto hidden">Generate Cards</div>
+				<div style="background-position: center; background-image: url('../img/97e942ce7fc4e9d4ea6d844a382f251f.gif')" class="mx-auto bg-cover text-black w-32 h-32 p-5 rounded-full loadCat">Loading</div>
+				<div class="grid grid-cols-2 h-32 text-center text-white p-8 justify-self-center ">
+					<div class="md:w-64 text-green-600 p-5 AllIn md:text-2xl hidden">Do you feel lucky?</div>
+					<div class="md:w-64 text-center text-2xl md:p-5 rounded bg-orange-400 AllIn py-7 md:py-5 hidden">GO</div>
+					
+				</div>
+		</div>
 		</div>
 
 	<!-- bottom -->
