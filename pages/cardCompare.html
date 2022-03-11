@@ -56,11 +56,26 @@
 		</div>
 	</div>
 
-	<div class="absolute w-full h-full mx-auto bg-white lostPop hidden">
-		<div class="grid bg-contain grid-cols-1 w-full bg-gray-800" style="background-position: center; background-repeat: repeat; background-image: url('../img/LostScreen.png">
-			<div class="h-96"></div>
-			<div class="h-96"></div>
-			<div class="h-96"></div>
+	<!--  -->
+
+	<div class="fixed mt-10 w-full h-max mx-auto lostPop hidden">
+		<div class="mx-auto w-4/5 h-full bg-gray-800 rounded-lg">
+			<div class="grid grid-cols-1">
+				<h1 class="font-bold text-center text-white text-4xl p-4">YOU LOST</h1>
+				<div class="p-1 grid grid-cols-1">
+
+					<div class="text-white text-xs">Your Score:<div class="Yscore"></div></div>
+					<div class="text-white text-xs">Opponent Score:<div class="Oscore"></div></div>
+
+				</div>
+				<h2 class="font-bold text-center text-white text-2xl p-4">Opponent Cards</h2>
+
+				<div class="h-96 overflow-auto md:h-56 w-full">
+					<div class="grid grid-cols-2 md:grid-cols-5 OppCards">
+					</div>
+				</div>
+				<a class="text-center rounded-b w-full bg-orange-400 text-white text-2xl p-4" href="../pages/reviewpage.html">Feedback?</a>
+			</div>
 		</div>
 	</div>
 
@@ -74,12 +89,12 @@
 
 		<div class="h-64 grid grid-cols-1 mt-20">
 
-		<div class="h-64 text-center text-white p-8 justify-self-center">
-				<div class="w-64 h-16 p-5 rounded bg-orange-400 Generate mx-auto hidden">Generate Cards</div>
-				<div style="background-position: center; background-image: url('../img/97e942ce7fc4e9d4ea6d844a382f251f.gif')" class="mx-auto bg-cover text-black w-32 h-32 p-5 rounded-full loadCat">Loading</div>
+		<div class="h-64 text-center text-white p-10 justify-self-center">
+				<div style="background-image: url('../img/GenButton.png'); background-position: center; background-size: cover;" class="cursor-pointer w-64 h-16 p-5 Generate mx-auto hidden">Generate Cards</div>
+				<div style="background-position: center; background-image: url('../img/97e942ce7fc4e9d4ea6d844a382f251f.gif')" class="cursor-wait mx-auto bg-cover text-black w-32 h-32 p-5 rounded-full loadCat">Loading</div>
 				<div class="grid grid-cols-2 h-32 text-center text-white p-8 justify-self-center ">
-					<div class="md:w-64 text-green-600 p-5 AllIn md:text-2xl hidden">Do you feel lucky?</div>
-					<div class="md:w-64 text-center text-2xl md:p-5 rounded bg-orange-400 AllIn py-7 md:py-5 hidden">GO</div>
+					<div class="md:w-64 text-green-600 font-bold p-5 AllIn md:text-2xl hidden">Do you feel lucky?</div>
+					<div style="background-image: url('../img/GenButton.png'); background-position: center; background-size: cover;" class="cursor-pointer md:w-64 text-center text-2xl md:p-5 rounded AllIn py-7 md:py-5 hidden">GO</div>
 					
 				</div>
 		</div>
@@ -94,9 +109,6 @@
 	</div>
 		
 </div>
-
-	
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="../js/index.js"></script>

@@ -43,7 +43,7 @@ setTimeout(function() {
 
     $(".loadCat").addClass("hidden");
         //your code to be executed after 1 second
-    }, 5000);
+    }, 3000);
 
 
 $(".Generate").on("click", function(){
@@ -126,8 +126,22 @@ $(".AllIn").on("click", function(){
 
         $(".lostPop").removeClass("hidden");
 
-    }
+        for(var i = 0; i < opponentInfo.length; i++){
 
+           //variable for html
+           var OppCards = `
+           <div class="bg-contain h-56 py-8" style="background-image: url('../img/Card\ Front.png'); background-position: center; background-repeat: no-repeat;">
+				<div class="bg-cover bg-white w-10 h-10 rounded-full mx-auto" style="background-image: url('`+ opponentInfo[i].img + `')"></div>
+				<h2 class="w-24 text-center truncate mx-auto py-4">`+ opponentInfo[i].name + `</h2>
+				<p class="w-24 mx-auto text-center truncate text-white font-bold text-xs">Price: `+ opponentInfo[i].price + `</p>
+				<p class="w-24 mx-auto text-center truncate text-white font-bold text-xs">MarketCap: `+ opponentInfo[i].marketCap +`</p>
+			</div>
+
+           `;
+       //add html to dom
+       $(".OppCards").append(OppCards);
+    }
+}
 })
 
 //links

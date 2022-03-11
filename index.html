@@ -49,32 +49,29 @@
 
 	<!-- Main Wecloming and information -->
 	<div class="md:flex bg-cover"  style="background-position: center; background-image: url('img/imageedit_23_8283415708.jpg')">
-		<div class="md:w-4/5 grid grid-cols-2">
+	<div class="md:w-4/5 grid grid-cols-2">
 
-				
-			<model-viewer class="col-span-2 h-32 md:h-64 w-full" alt='EarthOne' auto-rotate rotation-per-second='15deg' src='../assests/Moon.gltf'></model-viewer>
-			<div class="col-span-2 px-8 text-white text-center h-32 w-full">
-				<h1 class="text-2xl md:text-4xl font-semibold py-4">Welcome to the cryptocurrency apocalypse!</h1>
-				<p class="text-md">Take a chance in a classic <a href="pages/cardCompare.html" class="text-blue-300 textyes">crypto card game</a>, you might win something...</p>
-				<br>
-				<p>Hope you enjoy your stay!</p>
-			</div>
-			<div class="col-span-2 h-64 md:hidden"  style="background-position: center; background-repeat: no-repeat; background-image: url('img/ezgif-5-18f73eb434.gif')"></div>
-			<div class="col-span-2 h-full md:block sm:hidden"  style="background-position: center; background-repeat: no-repeat; background-image: url('img/ezgif-5-18f73eb434.gif')"></div>
+	<div class="w-full md:h-full p-2 h-32 col-span-2 md:col-span-1">
+		<model-viewer class="mx-auto h-full" alt='EarthOne' auto-rotate rotation-per-second='15deg' src='../assests/Moon.gltf'></model-viewer>
+	</div>			
+	
+	<div class="col-span-2 md:col-span-1 px-6 md:py-16 text-white text-left">
+	<h1 class="text-2xl md:text-4xl font-semibold py-4">Welcome to the cryptocurrency apocalypse!</h1>
+	<p class="text-md">Take a chance in a classic <a href="pages/cardCompare.html" class="text-blue-300 textyes">crypto card game</a>, you might win something... Explore all the weird and strange currencies</p>
+	<br>
+	<p>Hope you enjoy your stay!</p>
+	</div>
+	
+	<div class="col-span-2 md:h-full h-32"  style="background-position: center; background-repeat: no-repeat; background-image: url('img/ezgif-5-18f73eb434.gif')"></div>
+	</div>
 
-
-
-			</div>
-
-		<!-- Top currencies display-->
-		<div class="md:w-1/5 bg-white">
-			<div>
-				<h2 class="text-2xl text-center justify-content-center h-full p-2">Top Currencies Past 24 Hours</h2> </div>
-			<div class="TopCurrencies grid">
-				
-			</div>
+	<!-- Top currencies display-->
+	<div class="md:w-1/5 bg-white">
+		<div>
+			<h2 class="text-2xl text-center justify-content-center p-2">Top Currencies Past 24 Hours</h2></div>
+				<div style="height: 83vh" class="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300 TopCurrencies h-screen overflow-auto grid">
+				</div>
 		</div>
-
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
