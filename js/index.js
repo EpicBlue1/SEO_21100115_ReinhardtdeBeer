@@ -59,7 +59,7 @@ for(var i = 0; i < YourInfo.length; i++){
             //variable for html
             var Card = `
             <div class="bg-cover col w-32 h-48 md:w-64 md:h-96 pt-6 md:pt-12" style="background-image: url('../img/Card\ Front.png')">
-            <div id="lol"  class="cardplay bg-cover bg-white w-10 h-10 md:w-24 md:h-24 rounded-full mx-auto cursor-pointer" style="background-image: url('`+ YourInfo[i].img + `')"></div>
+            <div id="lol"  class="cardplay bg-cover w-10 h-10 md:w-24 md:h-24 rounded-full mx-auto" style="background-image: url('`+ YourInfo[i].img + `')"></div>
             <h2 class="w-24 md:w-40 text-center truncate mx-auto md:text-2xl py-4">`+ YourInfo[i].name + `</h2>
             <p class="text-center text-white font-bold text-xs md:text-lg">Price: `+ priceNull + `</p>
             <p class="text-center text-white font-bold text-xs md:text-lg">MarketCap: `+ YourInfo[i].marketCap +`</p>
@@ -104,6 +104,16 @@ const oppWords = "https://random-word-api.herokuapp.com/word?number=5";
         }
 });
 
+$(".infoBut").on("click", function(){
+    $(".infoDiv").removeClass("hidden");
+
+});
+
+$(".closeDiv").on("click", function(){
+    $(".infoDiv").addClass("hidden");
+});
+
+
 $(".AllIn").on("click", function(){
 
     var myFinal = 0;
@@ -115,6 +125,9 @@ $(".AllIn").on("click", function(){
     for (var i = 0; i < opponentInfo.length; i++) {
     myOpp += opponentInfo[i].price + opponentInfo[i].marketCap;
 }
+
+$(".Yscore").text(myFinal);
+$(".Oscore").text(myOpp);
     
     console.log(myFinal);
     console.log(myOpp);
@@ -131,7 +144,7 @@ $(".AllIn").on("click", function(){
            //variable for html
            var OppCards = `
            <div class="bg-contain h-56 py-8" style="background-image: url('../img/Card\ Front.png'); background-position: center; background-repeat: no-repeat;">
-				<div class="bg-cover bg-white w-10 h-10 rounded-full mx-auto" style="background-image: url('`+ opponentInfo[i].img + `')"></div>
+				<div class="bg-cover w-10 h-10 rounded-full mx-auto" style="background-image: url('`+ opponentInfo[i].img + `')"></div>
 				<h2 class="w-24 text-center truncate mx-auto py-4">`+ opponentInfo[i].name + `</h2>
 				<p class="w-24 mx-auto text-center truncate text-white font-bold text-xs">Price: `+ opponentInfo[i].price + `</p>
 				<p class="w-24 mx-auto text-center truncate text-white font-bold text-xs">MarketCap: `+ opponentInfo[i].marketCap +`</p>
