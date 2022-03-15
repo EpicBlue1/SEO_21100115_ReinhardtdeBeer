@@ -155,6 +155,7 @@ $(".Oscore").text(myOpp);
        $(".OppCards").append(OppCards);
     }
 }
+
 })
 
 //links
@@ -165,4 +166,21 @@ const menuOn = document.querySelector('.links');
 //add event listings
 btnOn.addEventListener("click", () => {
     menuOn.classList.toggle("hidden");
+});
+
+$(".closeDivOne").on("click", function(){
+    $(".wonPop").addClass("hidden");
+    $(".newCards").removeClass("hidden");
+    console.log("lol");
+});
+
+$(".closeDivTwo").on("click", function(){
+    $(".lostPop").addClass("hidden");
+    $(".newCards").removeClass("hidden");
+    console.log("lolone");
+});
+
+$(".closeDiv").on("click", function(){
+    $(".newCards").addClass("hidden");
+    console.log("lolone");
 });
