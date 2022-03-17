@@ -68,14 +68,19 @@
 
 	<!-- INfo screen -->
 
-	<div class="fixed mt-4 w-full mx-auto infoDiv hidden">
+	<div class="fixed mt-16 w-full mx-auto infoDiv">
 		<div class="mx-auto w-4/5 h-full shadow-2xl bg-gray-100 rounded-lg">
 			<div class="grid text-black grid-cols-1">
 				<button class="w-full rounded-b text-white p-2 closeDiv"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black" stroke-width="2">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
 				  </svg></button>
-				<h1 class="text-center text-4xl pb-6">How the game works</h1>
-				<p class="text-center  md:text-lg p-4">You and your opponent will be assigned 5 random cards based on 5 randomly generated words. Keep in mind that there is a slight chance you will receive fewer than 5 cards. But you can still win. When you hit GO, your cards and your opponent's cards are compared, and the player with the highest score wins.</p>
+				  <h1 class="text-center font-bold text-4xl pb-6">Welcome</h1>
+				<h1 class="text-center font-bold text-4xl pb-6">How the game works</h1>
+				<h2 class="text-center font-bold text-xl">Your Opponents cards:</h2>
+				<div class="mx-auto h-16 w-32" style="background-image: url('../img/ezgif-1-2d8281df43.gif'); background-repeat: no-repeat; background-size:contain; background-position: top"></div>
+				<p class="text-center  md:text-lg p-4">You and your opponent will be assigned 5 random cards based on 5 randomly generated words. Keep in mind that there is a slight chance you and your opponent will receive fewer than 5 cards.</p>
+				<div style="background-image: url('../img/GenButton.png'); background-position: center; background-size: cover;" class="mx-auto bg-orange-400 cursor-pointer md:w-64 h-16 text-center text-2xl md:p-5 rounded py-4 md:py-5">GO</div>
+				<p class="text-center  md:text-lg p-4">When you hit GO, your cards and your opponent's cards are compared, and the player with the highest score wins.</p>
 				<p class="text-center  md:text-lg p-4"><b>Note: </b>Due to a lack of available data, the card prices are fictitious.</p>
 				<a class="text-center w-full rounded-b bg-orange-400 text-white text-2xl p-4" href="../pages/reviewpage.html">Give Feedback</a>
 			</div>
