@@ -148,16 +148,16 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ### Mockups
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Two.jpg)
+![image2](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/tree/main/img/ReinhardtdeBeer_21100115Two.jpg)
 
 
 <br>
 
-![image3](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Three.jpg)
+![image3](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/tree/main/img/ReinhardtdeBeer_21100115Three.jpg)
 
 <br>
 
-![image4](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115One.jpg)
+![image4](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/tree/main/img/ReinhardtdeBeer_21100115One.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
