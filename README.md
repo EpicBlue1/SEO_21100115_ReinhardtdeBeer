@@ -87,7 +87,7 @@ Enter `https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer` into the URL f
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/MikeMaynard14/termoneexample.git
+   git clone https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
