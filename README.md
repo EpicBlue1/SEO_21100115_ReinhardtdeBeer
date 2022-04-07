@@ -3,10 +3,10 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/MikeMaynard14/termoneexample)
-![GitHub watchers](https://img.shields.io/github/watchers/MikeMaynard14/termoneexample)
-![GitHub language count](https://img.shields.io/github/languages/count/MikeMaynard14/termoneexample)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MikeMaynard14/termoneexample)
+![GitHub repo size](https://img.shields.io/github/repo-size/EpicBlue1/SEO_21100115_ReinhardtdeBeer)
+![GitHub watchers](https://img.shields.io/github/watchers/EpicBlue1/SEO_21100115_ReinhardtdeBeer)
+![GitHub language count](https://img.shields.io/github/languages/count/EpicBlue1/SEO_21100115_ReinhardtdeBeer)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EpicBlue1/SEO_21100115_ReinhardtdeBeer)
 
 
 <!-- HEADER SECTION -->
@@ -15,10 +15,6 @@
 <h6 align="center">DV200 - Term 1 | 2022</h6>
 </br>
 <p align="center">
-
-  <a href="https://github.com/MikeMaynard14/termoneexample">
-    <img src="src/assets/mascot.svg" alt="Logo" width="140" height="140">
-  </a>
   
   <h3 align="center">CryptoNight</h3>
 
@@ -44,9 +40,6 @@
   * [Prerequisites](#prerequisites)
   * [How to install](#how-to-install)
 * [Features and Functionality](#features-and-functionality)
-* [Concept Process](#concept-process)
-   * [Ideation](#ideation)
-   * [Wireframes](#wireframes)
 * [Development Process](#development-process)
    * [Implementation Process](#implementation-process)
         * [Highlights](#highlights)
@@ -155,16 +148,16 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 ### Mockups
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Mockup(7).jpg)
+![image2](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Two.jpg)
 
 
 <br>
 
-![image3](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Mockup(6).jpg)
+![image3](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Three.jpg)
 
 <br>
 
-![image4](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115Mockup(2).jpg)
+![image4](https://github.com/EpicBlue1/SEO_21100115_ReinhardtdeBeer/img/ReinhardtdeBeer_21100115One.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
