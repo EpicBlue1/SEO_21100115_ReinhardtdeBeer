@@ -52,14 +52,16 @@ $(".Generate").on("click", function(){
         $(".Selection").removeClass("hidden");
         $(".AllIn").removeClass("hidden");
 
+        console.log(YourInfo);
+
         //generate random words
 for(var i = 0; i < YourInfo.length; i++){
             var priceNull = YourInfo[i].marketCap * 2;
 
             //variable for html
             var Card = `
-            <div class="bg-cover col w-32 h-48 md:w-64 md:h-96 pt-6 md:pt-12" style="background-image: url('../img/Card\ Front.png')">
-            <div id="lol"  class="cardplay bg-cover w-10 h-10 md:w-24 md:h-24 rounded-full mx-auto" style="background-image: url('`+ YourInfo[i].img + `')"></div>
+            <div class="bg-cover  col w-32 h-48 md:w-64 md:h-96 pt-6 md:pt-12" style="background-image: url('../img/Card\ Front.png')">
+            <div id="lol"  class="cardplay bg-cover w-10 h-10 md:w-24 md:h-24 rounded-full mx-auto" style="filter: blur(px);  background-position: center; background-image: url('`+ YourInfo[i].img + `')"></div>
             <h2 class="w-24 md:w-40 text-center truncate mx-auto md:text-2xl py-4">`+ YourInfo[i].name + `</h2>
             <p class="text-center text-white font-bold text-xs md:text-lg">Price: `+ priceNull + `</p>
             <p class="text-center text-white font-bold text-xs md:text-lg">MarketCap: `+ YourInfo[i].marketCap +`</p>
